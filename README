@@ -1,0 +1,3 @@
+please execute: pip install -r requirements.txt
+run the test with: behave --junit -f behave_html_formatter:HTMLFormatter -o ./reports/report1.html -f pretty features
+

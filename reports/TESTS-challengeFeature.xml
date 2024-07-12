@@ -1,0 +1,111 @@
+<testsuite name="challengeFeature.Wizeline_UI_challenge" tests="7" errors="0" failures="1" skipped="0" time="59.9447" timestamp="2024-07-11T20:31:31.030905" hostname="Pipe"><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.1 " status="passed" time="6.348336"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.1 
+    Given I am on the login page ... passed in 3.365s
+    When I enter "standard_user" in the user field ... passed in 1.340s
+    And I enter "secret_sauce" in the password field ... passed in 0.154s
+    And I press the Login button ... passed in 1.166s
+    Then I should see the main page ... passed in 0.322s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.2 " status="failed" time="16.712176"><failure type="AssertionError" message="Test Failed">
+<![CDATA[
+Failing step: Then I should see the main page ... failed in 10.710s
+Location: features/challengeFeature.feature:12
+Assertion Failed: Test Failed]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.2 
+    Given I am on the login page ... passed in 2.662s
+    When I enter "locked_out_user" in the user field ... passed in 2.042s
+    And I enter "secret_sauce" in the password field ... passed in 0.163s
+    And I press the Login button ... passed in 1.135s
+    Then I should see the main page ... failed in 10.710s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.3 " status="passed" time="6.56127"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.3 
+    Given I am on the login page ... passed in 3.498s
+    When I enter "problem_user" in the user field ... passed in 1.359s
+    And I enter "secret_sauce" in the password field ... passed in 0.162s
+    And I press the Login button ... passed in 1.176s
+    Then I should see the main page ... passed in 0.366s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.4 " status="passed" time="11.247088"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.4 
+    Given I am on the login page ... passed in 2.636s
+    When I enter "performance_glitch_user" in the user field ... passed in 1.906s
+    And I enter "secret_sauce" in the password field ... passed in 0.187s
+    And I press the Login button ... passed in 6.165s
+    Then I should see the main page ... passed in 0.352s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.5 " status="passed" time="6.421109"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.5 
+    Given I am on the login page ... passed in 3.300s
+    When I enter "error_user" in the user field ... passed in 1.317s
+    And I enter "secret_sauce" in the password field ... passed in 0.182s
+    And I press the Login button ... passed in 1.243s
+    Then I should see the main page ... passed in 0.380s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="successfully logged in -- @1.6 " status="passed" time="6.32737"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test01
+  Scenario Outline: successfully logged in -- @1.6 
+    Given I am on the login page ... passed in 2.670s
+    When I enter "visual_user" in the user field ... passed in 1.935s
+    And I enter "secret_sauce" in the password field ... passed in 0.178s
+    And I press the Login button ... passed in 1.197s
+    Then I should see the main page ... passed in 0.348s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="challengeFeature.Wizeline_UI_challenge" name="failed to login" status="passed" time="6.32735"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Test02
+  Scenario: failed to login
+    Given I am on the login page ... passed in 3.302s
+    When I enter "standard_user" in the user field ... passed in 1.313s
+    And I enter "wrong_password" in the password field ... passed in 0.179s
+    And I press the login button ... passed in 1.137s
+    Then I should see an error message. ... passed in 0.397s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
